@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Instagram REAL or FAKE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!-- Include the CSS files here -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css' )}}" rel="stylesheet" type="text/css"" />
+  </head>
+  <body>
+    <div>
+      <link href="{{ url_for('static', filename='index.css' )}}" rel="stylesheet" type="text/css"" />
+
+      <div class="rectangle1-container">
+        <span class="rectangle1-text">Instagram REAL or FAKE</span>
+        <input
+          type="text"
+          name="username"
+          value=""
+          required=""
+          autofocus=""
+          placeholder="Enter Instgram Username"
+          class="rectangle1-textinput input"
+        />
+        <button type="button" class="rectangle1-button button">
+          <span class="rectangle1-text1">
+            <span>check</span>
+            <br />
+          </span>
+        </button>
+        <div class="result-container">
+          <div class="loading" style="display: none;"></div>
+          <p></p>
+        </div>
+        
+        <span class="rectangle1-text4">
+          Created by Aryan Chand and Viraj Sharaff
+        </span>
+      </div>
+    </div>
+    <!-- Include the JavaScript file here -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
